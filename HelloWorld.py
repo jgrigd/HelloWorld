@@ -5,8 +5,10 @@ def handler(event, context):
         
         # create response text
         response = "Hello World!"
-        if 'name' in event and event['name']:
-            response = "Hello " + event['name']
+        if 'FirstName' in event and event['FirstName']:
+            response = "Hello " + event['FirstName']
+        if 'LastName' in event and event['LastName']:
+            response += " " + event['LastName']
 
         return response
 
