@@ -4,9 +4,11 @@ def handler(event, context):
         print("Event Passed to Function: %s" % event)
         
         # create response text
-        response = "Hello!"
+
         if 'name' in event and event['name']:
             response = "Hello " + event['name'] + "!"
+        else:
+            response = "Hello there friend!"
         
 
         return response
