@@ -5,6 +5,8 @@ def handler(event, context):
         
         # create response text
         response = "Hello!"
+        if 'name' in event and event['name']:
+            response = "Hello " + event['name']
         
 
         return response
