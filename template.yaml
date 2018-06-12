@@ -5,7 +5,7 @@ Resources:
   helloworldpython3:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Handler: lambda_function.lambda_handler
+      Handler: HelloWorld.handler
       Runtime: python3.6
       CodeUri: s3://rigd-tools-east/HelloWorld.zip
       Description: A starter AWS Lambda function.
