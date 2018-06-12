@@ -3,7 +3,7 @@ phases:
     build:
         commands:
           - echo Hello World!
-          - aws s3 cp ./template.yaml s3://rigd-tools-east/HWTemplate.yaml
+          - aws s3 cp ./HWtemplate.yaml s3://rigd-tools-east/
 artifacts:
     files:
       - '__init__.py'
